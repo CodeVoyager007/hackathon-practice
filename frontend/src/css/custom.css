@@ -1,0 +1,18 @@
+/**
+ * Any custom styling goes here
+ */
+
+/* For content that lives in modern browsers */
+:root {
+  --ifm-font-family-base: 'Georgia', 'Times New Roman', serif;
+  --ifm-h1-font-size: 2.5rem;
+  --ifm-h2-font-size: 2rem;
+  --ifm-h3-font-size: 1.75rem;
+}
+
+/* Give the main content area a book-like page feel */
+.markdown {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
