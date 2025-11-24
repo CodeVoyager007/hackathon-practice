@@ -1,0 +1,85 @@
+---
+id: history-of-ai
+title: "2. History of AI"
+sidebar_label: History of AI
+---
+
+# 2. History of AI
+
+The dream of creating intelligent machines is not a new one. It has roots in ancient myths and philosophies. However, the formal journey of Artificial Intelligence as a scientific discipline began in the mid-20th century. This chapter traces the key milestones, breakthroughs, and periods of challenge that have shaped the field of AI.
+
+![History of AI](https://source.unsplash.com/random/800x400/?history,technology)
+
+## The Birth of AI (1950s)
+
+The 1950s are often considered the dawn of AI. The term "Artificial Intelligence" itself was coined at a pivotal workshop in 1956.
+
+*   **Alan Turing and the Turing Test (1950):** British mathematician and computer scientist Alan Turing published his seminal paper, "Computing Machinery and Intelligence." He proposed a test, now known as the **Turing Test**, to determine if a machine could exhibit intelligent behavior indistinguishable from that of a human.
+*   **The Dartmouth Workshop (1956):** John McCarthy, a young mathematician, organized a summer workshop at Dartmouth College. He brought together a group of leading researchers to explore the idea of "thinking machines." It was here that the term "Artificial Intelligence" was officially adopted. Early pioneers like Marvin Minsky, Allen Newell, and Herbert A. Simon laid the groundwork for the decades of research to come.
+
+## The Golden Years (1956-1974)
+
+Following the Dartmouth workshop, a wave of optimism and funding fueled rapid progress in AI. Computers were becoming more powerful, and researchers were developing early AI programs that demonstrated remarkable capabilities for their time.
+
+*   **Logic Theorist (1956):** Newell and Simon created the Logic Theorist, a program that could prove mathematical theorems. It was one of the first programs to perform a task that was previously thought to require human intellect.
+*   **Early Chatbots (1966):** Joseph Weizenbaum at MIT created ELIZA, an early natural language processing program that simulated a conversation with a psychotherapist. While simple, it surprised many with its ability to mimic human conversation.
+
+Here's a simplified representation of how ELIZA might work, using Python to find keywords and generate canned responses:
+
+```python
+import re
+
+def eliza_response(text):
+    text = text.lower()
+    if re.search(r'\b(hello|hi)\b', text):
+        return "Hello, how are you feeling today?"
+    elif re.search(r'\b(mother|father|family)\b', text):
+        return "Tell me more about your family."
+    elif re.search(r'\b(depressed|sad)\b', text):
+        return "I'm sorry to hear you are feeling sad. Why is that?"
+    else:
+        return "Please tell me more."
+
+# Example interaction
+print(eliza_response("Hello, I am feeling a bit sad today."))
+# Expected output: I'm sorry to hear you are feeling sad. Why is that?
+```
+
+## The First AI Winter (1974-1980)
+
+The initial excitement gave way to a period of disillusionment known as the "AI winter." The promises of AI had been grand, but the reality was that the technology was limited by computational power and the complexity of the problems.
+
+*   **The Lighthill Report (1973):** In the UK, a report by Sir James Lighthill was highly critical of the progress in AI research, leading to major funding cuts.
+*   **DARPA's Frustration:** In the US, the Defense Advanced Research Projects Agency (DARPA) grew frustrated with the lack of progress in areas like speech understanding and also cut funding.
+
+## The Rise of Expert Systems (1980s)
+
+AI saw a resurgence in the 1980s with the commercial success of **expert systems**. These were AI programs designed to mimic the decision-making ability of a human expert in a narrow domain.
+
+*   **XCON (1980):** Digital Equipment Corporation (DEC) developed XCON, an expert system that helped configure computer systems. It was estimated to save the company millions of dollars annually.
+*   **The Fifth Generation Computer Project (1982):** Japan launched an ambitious project to build a new generation of computers designed for AI, which spurred a new wave of investment in AI research worldwide.
+
+## The Second AI Winter (1987-1993)
+
+The expert system market collapsed in the late 1980s. The systems were expensive to maintain, difficult to update, and the introduction of cheaper, more powerful desktop computers made specialized AI hardware obsolete. This led to another period of reduced funding and interest.
+
+## The Modern AI Revolution (1990s-Present)
+
+The 1990s marked the beginning of the modern era of AI, driven by several factors:
+*   **Increased Computing Power:** Moore's Law continued to deliver exponential growth in computing power.
+*   **Big Data:** The internet and digitalization of society created vast amounts of data to train AI models.
+*   **Algorithmic Advances:** Researchers developed more sophisticated machine learning algorithms.
+
+| Period              | Key Developments                                                              |
+| ------------------- | ----------------------------------------------------------------------------- |
+| **1990s-2000s**     | Machine Learning becomes dominant. IBM's Deep Blue defeats chess champion Garry Kasparov (1997). |
+| **2010s**           | The Deep Learning boom. AlexNet wins the ImageNet competition (2012), showing the power of deep neural networks. Google's AlphaGo defeats Go champion Lee Sedol (2016). |
+| **2020s-Present**   | Rise of Large Language Models (LLMs) like GPT-3 and ChatGPT, and Generative AI for images and code. |
+
+This video provides a great overview of the history of AI:
+
+<div style={{textAlign: 'center', marginTop: '20px'}}>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/T3uhA5a4g6g" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
+
+The history of AI is a story of ambition, setbacks, and incredible breakthroughs. Today, we are living in an era that the early pioneers could only dream of. In the next chapter, we will explore the diverse applications of AI that are shaping our world.

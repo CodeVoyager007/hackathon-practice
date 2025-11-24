@@ -1,45 +1,41 @@
-# A Beginner's Guide to AI - Docusaurus Site
+# Website
 
-This folder contains the source code for the "A Beginner's Guide to AI" book website, built with Docusaurus.
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-## Development
+## Installation
 
-To run the site locally, follow these steps:
+```bash
+yarn
+```
 
-1.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
-2.  **Start the development server:**
-    ```bash
-    npm run start
-    ```
-    The site will be available at `http://localhost:3000`.
+## Local Development
 
-## Deployment to GitHub Pages
+```bash
+yarn start
+```
 
-This site is configured for easy deployment to GitHub Pages.
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Manual Deployment
+## Build
 
-1.  **Create a GitHub Repository:** Create a new GitHub repository named `hackathon-project`.
+```bash
+yarn build
+```
 
-2.  **Push Your Code:** Add the remote and push the `main` branch.
-    ```bash
-    git remote add origin https://github.com/yourusername/hackathon-project.git
-    git branch -M main
-    git push -u origin main
-    ```
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-3.  **Run the Deploy Command:** This command will build the static site and push the `build` directory to the `gh-pages` branch of your repository.
-    ```bash
-    npm run deploy
-    ```
+## Deployment
 
-4.  **Configure GitHub Pages:** In your repository's settings under "Pages", set the source to "Deploy from a branch" and select the `gh-pages` branch with the `/ (root)` folder. Your site should be live at `https://yourusername.github.io/hackathon-project/`.
+Using SSH:
 
-### Automated Deployment with GitHub Actions
+```bash
+USE_SSH=true yarn deploy
+```
 
-This repository includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that automates the deployment process. The workflow will trigger on every push to the `main` branch, building and deploying your site automatically.
+Not using SSH:
 
-**Note:** For the GitHub Action to work, you may need to go to your repository's **Settings > Actions > General** and ensure that **Workflow permissions** are set to **Read and write permissions**.
+```bash
+GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

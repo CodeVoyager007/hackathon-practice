@@ -1,0 +1,85 @@
+---
+id: introduction-to-ai
+title: "1. Introduction to AI"
+sidebar_label: Introduction to AI
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 1. Introduction to AI
+
+Welcome to "A Beginner's Guide to AI"! In this first chapter, we'll embark on a journey to understand the fundamentals of Artificial Intelligence (AI). We'll demystify the jargon and get a clear picture of what AI is, what it isn't, and why it's becoming one of the most transformative technologies of our time.
+
+![AI Image](https://source.unsplash.com/random/800x400/?artificial-intelligence)
+
+## What is Artificial Intelligence?
+
+At its core, **Artificial Intelligence** is a broad area of computer science that makes it possible for machines to learn from experience, adjust to new inputs, and perform human-like tasks. These are not sentient robots from science fiction; rather, AI refers to systems that can recognize patterns, make predictions, and learn from data to improve their performance over time.
+
+Think about how you recognize a friend's face in a photo, understand the words they are speaking, or decide the best route to take to a new destination. These are complex tasks for the human brain. The goal of AI is to enable computers to perform these tasks, often with greater speed and accuracy than humans.
+
+### Key Concepts in AI
+
+AI is not a single technology but a collection of different methods and subfields. Here are a few key concepts:
+
+*   **Machine Learning (ML):** This is a subset of AI where systems learn from data. Instead of being explicitly programmed with rules, an ML model is "trained" on a large dataset. For example, a spam filter learns to identify junk mail by analyzing thousands of examples of spam and non-spam emails.
+*   **Deep Learning:** A subfield of machine learning, deep learning uses neural networks with many layers (hence "deep") to learn from vast amounts of data. This is the technology behind self-driving cars recognizing pedestrians and voice assistants understanding your commands.
+*   **Natural Language Processing (NLP):** NLP gives machines the ability to read, understand, and derive meaning from human languages. It's how services like Google Translate work and how chatbots like ChatGPT can hold conversations.
+
+Here’s a simple Python example of a machine learning concept using the popular `scikit-learn` library. This code trains a simple classifier to distinguish between two types of fruit based on their weight and texture.
+
+```python
+from sklearn.tree import DecisionTreeClassifier
+
+# Data: [weight (grams), texture (0=smooth, 1=bumpy)]
+features = [[140, 0], [130, 0], [150, 1], [170, 1]]
+# Labels: 0 for apple, 1 for orange
+labels = [0, 0, 1, 1]
+
+# Create a classifier
+clf = DecisionTreeClassifier()
+
+# Train the classifier
+clf = clf.fit(features, labels)
+
+# Make a prediction
+prediction = clf.predict([[160, 1]])
+print(f"The prediction is: {'Orange' if prediction[0] == 1 else 'Apple'}")
+# Expected output: The prediction is: Orange
+```
+
+## Types of AI
+
+AI can be categorized based on its capabilities.
+
+<Tabs>
+  <TabItem value="ani" label="Artificial Narrow Intelligence (ANI)" default>
+    Also known as Weak AI, this is the only type of AI we have successfully realized to date. ANI is designed and trained for a specific task. Virtual assistants like Siri and Alexa are examples of ANI. They are excellent at what they do but operate within a limited, pre-defined range of functions.
+  </TabItem>
+  <TabItem value="agi" label="Artificial General Intelligence (AGI)">
+    Also known as Strong AI, AGI refers to a machine with the ability to understand, learn, and apply its intelligence to solve any problem that a human being can. AGI would have a self-aware consciousness and the ability to think abstractly. This type of AI is still theoretical and is a major goal for many AI researchers.
+  </TabItem>
+  <TabItem value="asi" label="Artificial Superintelligence (ASI)">
+    ASI is a hypothetical AI that possesses intelligence far surpassing that of the brightest and most gifted human minds. This goes beyond just replicating human intelligence to having an intelligence that is much more powerful and capable. The implications of ASI are a topic of intense debate among scientists and philosophers.
+  </TabItem>
+</Tabs>
+
+## Why is AI Important?
+
+AI is transforming industries and our daily lives. Its ability to process and analyze massive datasets far beyond human capability is unlocking new efficiencies and possibilities.
+
+| Pros                               | Cons                                 |
+| ---------------------------------- | ------------------------------------ |
+| Automation of repetitive tasks     | Job displacement due to automation   |
+| Enhanced decision-making           | Potential for bias in AI algorithms  |
+| Advances in healthcare and science | Ethical concerns and privacy issues  |
+| Personalization of services        | High cost of development             |
+
+To see AI in action, check out this video explaining the basics of neural networks:
+
+<div style={{textAlign: 'center', marginTop: '20px'}}>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/aircAruvnKk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
+
+In the next chapter, we will explore the fascinating history of AI, from its conceptual origins to the breakthroughs that have led to the AI revolution we see today.
