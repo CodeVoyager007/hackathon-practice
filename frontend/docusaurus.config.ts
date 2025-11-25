@@ -11,11 +11,11 @@ const config: Config = {
   url: 'https://CodeVoyager007.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/hackathon-book/',
+  baseUrl: '/hackathon-practice/',
 
   // GitHub pages deployment config.
   organizationName: 'CodeVoyager007', // Usually your GitHub org/user name.
-  projectName: 'hackathon-book', // Usually your repo name.
+  projectName: 'hackathon-practice', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
@@ -35,7 +35,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           editUrl:
-            'https://github.com/CodeVoyager007/hackathon-book/tree/main/frontend/',
+            'https://github.com/CodeVoyager007/hackathon-practice/tree/main/frontend/',
           routeBasePath: '/',
         },
         blog: false,
@@ -62,7 +62,7 @@ const config: Config = {
           label: 'Chapters',
         },
         {
-          href: 'https://github.com/CodeVoyager007/hackathon-book',
+          href: 'https://github.com/CodeVoyager007/hackathon-practice',
           label: 'GitHub',
           position: 'right',
         },
@@ -114,7 +114,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/CodeVoyager007/hackathon-book',
+              href: 'https://github.com/CodeVoyager007/hackathon-practice',
             },
           ],
         },
