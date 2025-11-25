@@ -11,11 +11,11 @@ const config: Config = {
   url: 'https://CodeVoyager007.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/hackathon-practice/',
+  baseUrl: '/hackathon-book/',
 
   // GitHub pages deployment config.
   organizationName: 'CodeVoyager007', // Usually your GitHub org/user name.
-  projectName: 'hackathon-practice', // Usually your repo name.
+  projectName: 'hackathon-book', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
@@ -131,20 +131,18 @@ const config: Config = {
     [
       '@docusaurus/plugin-client-redirects',
       {
-        from: '/docs/intro',
-        to: '/',
+      redirects: [
+        {
+          from: '/docs/intro',
+          to: '/',
+        },
+      ],
       },
     ],
-    ['@cmfcmf/docusaurus-search-local', {}]
+    ['@cmfcmf/docusaurus-search-local', {indexBlog: false}]
   ],
 
-  typescript: {
-    // Recommended in Docusaurus docs
-    // Fork a new process for type checking
-    forkTsChecker: true,
-    // We can also enable incremental builds
-    useIncrementalCompilation: true,
-  },
+
 };
 
 export default config;
